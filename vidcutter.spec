@@ -7,7 +7,7 @@ Release:	1
 Group:		Video
 License:	GPLv3+
 Url:		http://vidcutter.ozmartians.com
-Source0:	https://github.com/ozmartian/%{name}/archive/%{version}.tar.gz
+Source0:	https://github.com/ozmartian/vidcutter/archive/%{version}/vidcutter-%{version}.tar.gz
 BuildRequires:	python-qt5-devel
 BuildRequires:	pkgconfig(mpv)
 BuildRequires:	pkgconfig(python)
@@ -39,7 +39,7 @@ via mpv and FFmpeg.
 #--------------------------------------------------------------
 
 %prep
-%setup -qn %{name}-%{version}
+%setup -q
 
 rm -rf %{name}.egg-info
 sed -i "s/pypi/fedora/" "%{name}/__init__.py"
