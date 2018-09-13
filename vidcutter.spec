@@ -52,9 +52,6 @@ sed -i "s/pypi/fedora/" "%{name}/__init__.py"
 %install
 %py_install
 
-# Fix perms
-chmod 0644 %{buildroot}%{_iconsdir}/hicolor/scalable/apps/vidcutter.svg
-
 pushd %{buildroot}%{py3_platsitedir}/%{name}
 find . -type f -name "*.py" -exec chmod 0755 {} \;
 chmod 0644 resources.py
