@@ -39,7 +39,7 @@ via mpv and FFmpeg.
 #--------------------------------------------------------------
 
 %prep
-%setup -q
+%setup -qn %{name}-%{version}
 
 rm -rf %{name}.egg-info
 sed -i "s/pypi/fedora/" "%{name}/__init__.py"
