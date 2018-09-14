@@ -25,7 +25,7 @@ It focuses on getting the job done using tried and true tech in its arsenal
 via mpv and FFmpeg.
 
 %files
-%doc README.md LICENSE
+%doc README.md LICENSE CHANGELOG
 %{_bindir}/%{name}
 %{py3_platsitedir}/%{name}
 %{py3_platsitedir}/%{name}-%{version}-py?.?.egg-info
@@ -33,8 +33,10 @@ via mpv and FFmpeg.
 %{_datadir}/applications/*.desktop
 #{_datadir}/mime/packages/x-%{name}.xml
 #_datadir}/pixmaps/%{name}.svg
-#{_iconsdir}/hicolor/*/apps/%{name}.png
+#{_iconsdir}/hicolor/*/apps/*
 #{_iconsdir}/hicolor/scalable/apps/%{name}.svg
+%{_datadir}/metainfo/com.ozmartians.VidCutter.appdata.xml
+%{_datadir}/mime/packages/com.ozmartians.VidCutter.xml
 
 #--------------------------------------------------------------
 
