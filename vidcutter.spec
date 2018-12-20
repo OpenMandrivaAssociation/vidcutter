@@ -13,7 +13,8 @@ BuildRequires:	pkgconfig(mpv)
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python3egg(setuptools)
 Requires:	ffmpeg
-Requires:	mediainfo
+#Mediainfo need fix for cooker due to lack of qt4
+#Requires:	mediainfo
 Requires:	mpv
 Requires:	python-qt5
 Requires:	python-qt5-opengl
