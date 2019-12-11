@@ -3,7 +3,7 @@
 Summary:	FFmpeg based video cutter & joiner with a modern PyQt5 GUI
 Name:		vidcutter
 Version:	6.0.0
-Release:	3
+Release:	4
 Group:		Video
 License:	GPLv3+
 Url:		http://vidcutter.ozmartians.com
