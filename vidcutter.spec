@@ -1,4 +1,5 @@
 #define	debug_package	%{nil}
+%define _empty_manifest_terminate_build 0
 
 Summary:	FFmpeg based video cutter & joiner with a modern PyQt5 GUI
 Name:		vidcutter
