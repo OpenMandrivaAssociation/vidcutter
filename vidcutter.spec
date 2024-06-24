@@ -30,7 +30,7 @@ via mpv and FFmpeg.
 %doc README.md LICENSE CHANGELOG
 %{_bindir}/%{name}
 %{py3_platsitedir}/%{name}
-%{py3_platsitedir}/%{name}-%{version}-py?.?.egg-info
+#{py3_platsitedir}/%{name}-%{version}-py?.?.egg-info
 #{_datadir}/appdata/*.appdata.xml
 %{_datadir}/applications/*.desktop
 #{_datadir}/mime/packages/x-%{name}.xml
