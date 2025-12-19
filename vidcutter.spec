@@ -19,7 +19,7 @@ Recommends:	mediainfo
 Requires:	mpv
 Requires:	python-qt5
 Requires:	python-qt5-opengl
-Requires:	python3egg(setuptools)
+Requires:	python%{pyver}dist(setuptools)
 
 %description
 FFmpeg based video cutter & joiner with a modern PyQt5 GUI.
