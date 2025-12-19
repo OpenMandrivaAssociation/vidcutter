@@ -30,7 +30,7 @@ via mpv and FFmpeg.
 %doc README.md LICENSE CHANGELOG
 %{_bindir}/%{name}
 %{py3_platsitedir}/%{name}
-#{python_sitearch}/vidcutter-*.dist-info
+%{python_sitearch}/vidcutter-*-py*.egg-info/
 #{_datadir}/appdata/*.appdata.xml
 %{_datadir}/applications/*.desktop
 #{_datadir}/mime/packages/x-%{name}.xml
