@@ -4,21 +4,21 @@
 Summary:	FFmpeg based video cutter & joiner with a modern PyQt5 GUI
 Name:		vidcutter
 Version:	6.0.5.3
-Release:	1
+Release:	2
 Group:		Video
 License:	GPLv3+
 Url:		https://vidcutter.ozmartians.com
 Source0:	https://github.com/ozmartian/vidcutter/archive/%{version}/vidcutter-%{version}.tar.gz
-BuildRequires:	python-qt5-devel
+BuildRequires:	python-qt5-devel >= 5.15.11-3
 BuildRequires:	pkgconfig(mpv)
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(setuptools)
 Requires:	ffmpeg
 #Fixed but still in contrib, so make it recommends inteed rq
 Recommends:	mediainfo
 Requires:	mpv
-Requires:	python-qt5
-Requires:	python-qt5-opengl
+Requires:	python-qt5 >= 5.15.11-3
+Requires:	python-qt5-opengl >= 5.15.11-3
 Requires:	python%{pyver}dist(setuptools)
 
 %description
@@ -30,7 +30,7 @@ via mpv and FFmpeg.
 %doc README.md LICENSE CHANGELOG
 %{_bindir}/%{name}
 %{py3_platsitedir}/%{name}
-%{python_sitearch}/vidcutter-*-py*.egg-info/
+%{python_sitearch}/vidcutter-%{version}*
 #{_datadir}/appdata/*.appdata.xml
 %{_datadir}/applications/*.desktop
 #{_datadir}/mime/packages/x-%{name}.xml
